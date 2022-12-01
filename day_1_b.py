@@ -14,7 +14,9 @@ def main():
         else:
             individual_total += int(s)
     
-    print(max(individual_sums))
+    individual_sums = sorted(individual_sums)
+
+    print(individual_sums[-1] + individual_sums[-2] + individual_sums[-3])
 
 
 if __name__ == "__main__":
